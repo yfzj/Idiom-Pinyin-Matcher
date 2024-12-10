@@ -45,7 +45,7 @@ while True:
 
             match = True
             for idx, (user_input, idiom_pinyin) in enumerate(zip(input_sequence, idiom_pinyin_list)):
-                if user_input == "?" or user_input == "":
+                if user_input == "/" or user_input == "":
                     continue  # 忽略用户输入中的问号或空字符串
                 if user_input not in idiom_pinyin:
                     match = False
